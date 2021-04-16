@@ -32,13 +32,13 @@
                 var code = document.getElementById('code');
                 if (row.rowIndex == SELECTED_ROW) {
                     SELECTED_ROW = -1;
-                    add_code_b.innerHTML = 'Add Code';
+                    add_code_b.innerHTML = 'コードを追加';
                     code_title.value = '';
                     code.value = '';
                 } else if (!ROW_DELETE) {
                     if (SELECTED_ROW != -1 && CODES.length != 0) table.rows[SELECTED_ROW].style.backgroundColor = '';
                     SELECTED_ROW = row.rowIndex;
-                    add_code_b.innerHTML = 'Save Code';
+                    add_code_b.innerHTML = 'コードを保存';
                     code_title.value = row.childNodes[0].innerHTML;
                     code.value = CODES[SELECTED_ROW]['text'];
                 }
